@@ -14,4 +14,4 @@ Keeping track of all the countries and their codes is bit tedious task but it ca
 ![Contact details](https://github.com/ashishmodak/contact-reading-android/blob/master/images/contact_details.jpg "Contact details")
 
 ## Contry code selection
-![County selection](https://github.com/ashishmodak/contact-reading-android/blob/master/images/contact_details.jpg "County selection")
+![County selection](https://github.com/ashishmodak/contact-reading-android/blob/master/images/country_selection.jpg "County selection")
