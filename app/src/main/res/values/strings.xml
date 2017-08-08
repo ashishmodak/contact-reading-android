@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Contacts Demo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="country_selection_demo">Country selection demo</string>
+    <string name="developers_note">Developers Note:\n1.If android device has sim card in it then above spinner will select the country code automatically.\n 2. If in case of no sim card first country will get selected from the list(i.e. Afghanistan)</string>
+    <string name="loading">Loading...</string>
+    <string name="deny">Deny</string>
+    <string name="grant">Grant</string>
+    <string name="demo">Demo</string>
+    <string name="permissiont_str">This demo requires permission to read your contacts.\nDon\'t worry, We are not sharing your contacts.</string>
+</resources>

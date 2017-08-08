@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/Contacts/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.3.1_255e63b2fba2d37190481ad1eb5444b9cf3de657.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/muffin/PHoto/contact/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_3b242686c03ff4862ae0ec7692af5a7a90907662.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/PHoto/contact/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/muffin/PHoto/contact/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.3.1_7b99c7e47708260e91e935f58a62bde6ae16fea9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/.gradle/caches/modules-2/files-2.1/com.googlecode.libphonenumber/libphonenumber/8.0.1/8b7757d81e04f6128d93aba2e74c5161553ce8c9/libphonenumber-8.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8b7757d81e04f6128d93aba2e74c5161553ce8c9">
+        <dex dex="/Users/muffin/PHoto/contact/app/build/intermediates/pre-dexed/debug/libphonenumber-8.0.1_ee8975ef0554a1e83c40b68a30d2551f94b524da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/PHoto/contact/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/muffin/PHoto/contact/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.3.1_42c6b1aca29d39c886fabd855104970a1737e2da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/PHoto/contact/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/muffin/PHoto/contact/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.3.1_1741d5f579ff78e62cdb5b23fce3502f5ded6b02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/Contacts/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.3.1_bacbeb8ae059c7c03e510dfe3895fd6ff39586eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_3b242686c03ff4862ae0ec7692af5a7a90907662.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/Contacts/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8e951b984b603d7128626ad34b32512d8db12d87">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/instant-run_37584ff195c27bacbcb6557bfc62018653404e2a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/Contacts/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.3.1_291439cf0a168abb9999fd5fcca319b416c4ea02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/PHoto/contact/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/muffin/PHoto/contact/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.3.1_76c05b2924fba9591f5bc9e4085cd5cdd3aecc7b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/Contacts/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="020604fad8c09becb96405a09e0d00f4b5462b65">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_c6f540f673804cfd999098fbea36e901d64cfd2c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/Contacts/app/build/intermediates/exploded-aar/com.android.support/palette-v7/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="379a48c2da13ffb7ec7134f2c715663834357670">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/com.android.support-palette-v7-25.3.1_bbf2dcad2b7afef5fbd39ffcd039be38fdd623a6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/PHoto/contact/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/muffin/PHoto/contact/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.3.1_39f9b927cc16fbfdc624944b2f23279483209d8a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/Contacts/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.3.1_b332358b64b9975dcbe3092f640dc4ad7205b8f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/glide-3.7.0_53941aad145f6c97998c8a80573c97926fd24c02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/PHoto/contact/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/muffin/PHoto/contact/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.3.1_92073e7664bcfe558238ff67c63988386a43ae04.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/Contacts/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.3.1_4fe028e8c1cac0f693eed2436d25ab86fd032173.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/.gradle/caches/modules-2/files-2.1/com.googlecode.libphonenumber/libphonenumber/8.0.1/8b7757d81e04f6128d93aba2e74c5161553ce8c9/libphonenumber-8.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="8b7757d81e04f6128d93aba2e74c5161553ce8c9">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/libphonenumber-8.0.1_ee8975ef0554a1e83c40b68a30d2551f94b524da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/PHoto/contact/app/build/intermediates/exploded-aar/com.android.support/palette-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="379a48c2da13ffb7ec7134f2c715663834357670">
+        <dex dex="/Users/muffin/PHoto/contact/app/build/intermediates/pre-dexed/debug/com.android.support-palette-v7-25.3.1_eea45defa594c079bf96e49761585c5c4371777e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/PHoto/contact/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
+        <dex dex="/Users/muffin/PHoto/contact/app/build/intermediates/pre-dexed/debug/de.hdodenhof-circleimageview-2.0.0_2b9d85900a7912fec14de5bd5cee4aae216e8d5f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/Contacts/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.3.1_288ba466fc53109d8f8368a4be308dcb65f336fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/Contacts/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.3.1_43c82026a0336f48940114136ec9ba4b3074b31d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/Contacts/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.3.1_6aa6eeb083672f8a61a9d549a1dcc396f74b101e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/PHoto/contact/app/build/intermediates/exploded-aar/com.android.support/transition/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/muffin/PHoto/contact/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.3.1_818058f790997899e19d786d3a05178381592696.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/PHoto/contact/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/muffin/PHoto/contact/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.3.1_f0871ba617083935456ca9f0c4be9f3d739be4cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/PHoto/contact/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="/Users/muffin/PHoto/contact/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.3.1_d5f0669e039f8a585b5402cb15814d50a903adfd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Users/muffin/PHoto/contact/app/build/intermediates/pre-dexed/debug/glide-3.7.0_53941aad145f6c97998c8a80573c97926fd24c02.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/Contacts/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/2.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="031e8b3ab2df4ab43b1017f84417d7e10dfbb8d2">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/de.hdodenhof-circleimageview-2.0.0_8856e59f1542f30292bfa5e449aeb5901b504f46.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/PHoto/contact/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/muffin/PHoto/contact/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.3.1_fd8b9540d3eee9c4b320789a82968c72e3d4d9f3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/Contacts/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.3.1_ab2db793889acc42c6dbf0b7a541a2a07f1b9500.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/PHoto/contact/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/muffin/PHoto/contact/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.1_17532754bc2a5126774f2b2f5e02179410a51176.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/Contacts/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.3.1_80575a0b97170c1b871871f848523f032d697075.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/Contacts/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.3.1_114a6822ecc757a7708d09f9fea86c71940bfcbc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/Contacts/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.1_0e4e7910fc5bc9a3c474fe62916e3dd519a8a102.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/PHoto/contact/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/muffin/PHoto/contact/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.3.1_a28c20d15965ddcb87e5038919a00aa1012c03c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/PHoto/contact/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/muffin/PHoto/contact/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.3.1_6a96e3d78b32171d9c755352b2959e9ba8de365e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/muffin/Contacts/app/build/intermediates/exploded-aar/com.android.support/design/25.3.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/muffin/Contacts/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.3.1_4236fc98b143520fcf7067838df14453c15f317b.jar" />
+    </item>
+
+</items>
