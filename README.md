@@ -6,6 +6,9 @@ This project demonstrates the contact book reading on Android Phone. Also it hel
 ## Selecting contry code on Android phone
 Keeping track of all the countries and their codes is bit tedious task but it can easily achievable using libphonenumber. In this demo, the spinner will auto select the country according to sim card present in the device. If in the case of no sim card or lack of permission it will select the first country from the list of countries. 
 
+## Scan following QR code for demo app
+![QR Code](https://github.com/ashishmodak/contact-reading-android/blob/master/images/qrcodeforapp.png "QR Code for App")
+
 ## Contact list
 ![Contact list](https://github.com/ashishmodak/contact-reading-android/blob/master/images/contact_list.jpg "Contact list")
 
