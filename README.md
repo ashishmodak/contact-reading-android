@@ -18,3 +18,6 @@ Keeping track of all the countries and their codes is bit tedious task but it ca
 
 ## Contry code selection
 ![County selection](https://github.com/ashishmodak/contact-reading-android/blob/master/images/country_selection.jpg "County selection")
+
+## City selection
+![City selection](https://github.com/ashishmodak/contact-reading-android/blob/master/images/city_selection_demo.png "City selection")
