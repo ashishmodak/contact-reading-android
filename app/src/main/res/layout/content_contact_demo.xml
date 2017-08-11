@@ -10,4 +10,5 @@
     tools:showIn="@layout/app_bar_contact_demo">
     <include layout="@layout/content_demo1" />
     <include layout="@layout/content_demo3" />
+    <include layout="@layout/content_demo4" />
 </RelativeLayout>

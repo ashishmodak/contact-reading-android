@@ -16,7 +16,9 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.telephony.TelephonyManager;
+import android.text.Editable;
 import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -28,16 +30,28 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.contacts.contactsdemo.adapters.CountryCodeListAdapter;
 import com.example.contacts.contactsdemo.utilities.RecycleViewItemClickListners;
 import com.google.i18n.phonenumbers.PhoneNumberUtil;
 import com.google.i18n.phonenumbers.Phonenumber;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -45,20 +59,26 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
 import java.util.Set;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import static com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberType.UNKNOWN;
 
 public class ContactDemo extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener, RecycleViewItemClickListners.OnItemClickListener {
+        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener, RecycleViewItemClickListners.OnItemClickListener, AdapterView.OnItemClickListener {
     private static final int REQUEST_READ_PHONE_PERMISSION = 99;
     Spinner mCountryCode;
-    RelativeLayout loadingView, countryselectiondemo, demoNoContent;
+    RelativeLayout loadingView, countryselectiondemo, demoNoContent, cityselectiondemo;
     LinearLayout demo1ParentContainer;
     private RecyclerView recyclerView;
     private ContactsAdapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
+    CitySelectionAdapter citySelectionadapter;
     Button readBtn;
     ArrayList<ContactObj> contactList = new ArrayList<>();
+    AutoCompleteTextView citySelectionAutoComTextView;
+    Timer timer;
+
 
     CountryCodeListAdapter ccList;
     @Override
@@ -67,9 +87,7 @@ public class ContactDemo extends AppCompatActivity
         setContentView(R.layout.activity_contact_demo);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        mCountryCode = (Spinner) findViewById(R.id.phone_cc);
-        loadingView = (RelativeLayout)findViewById(R.id.loadingView);
-        countryselectiondemo = (RelativeLayout)findViewById(R.id.countryselectiondemo);
+        //Contact demo UI elements
         readBtn= (Button)findViewById(R.id.readBtn);
         readBtn.setOnClickListener(this);
         mLayoutManager = new LinearLayoutManager(this);
@@ -78,6 +96,43 @@ public class ContactDemo extends AppCompatActivity
         demoNoContent = (RelativeLayout)findViewById(R.id.demoNoContent);
         demo1ParentContainer = (LinearLayout)findViewById(R.id.demo1ParentContainer);
 
+        //Country selection demo UI elements
+        mCountryCode = (Spinner) findViewById(R.id.phone_cc);
+        loadingView = (RelativeLayout)findViewById(R.id.loadingView);
+        countryselectiondemo = (RelativeLayout)findViewById(R.id.countryselectiondemo);
+
+        //City selection demo UI elements
+        cityselectiondemo = (RelativeLayout)findViewById(R.id.cityselectiondemo);
+        citySelectionAutoComTextView = (AutoCompleteTextView)findViewById(R.id.cityAutoComplete);
+
+        citySelectionadapter = new CitySelectionAdapter(this);
+        citySelectionAutoComTextView.setOnItemClickListener(this);
+        citySelectionAutoComTextView.setAdapter(citySelectionadapter);
+        citySelectionAutoComTextView.setThreshold(1);
+
+        timer = new Timer();
+        citySelectionAutoComTextView.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(final Editable s) {
+                timer.schedule(new TimerTask() {
+                    @Override
+                    public void run() {
+                        loadSuggestions(s.toString());
+                    }
+                }, 1000);
+
+            }
+        });
         mAdapter = new ContactsAdapter(this, new ArrayList<ContactObj>());
         recyclerView.setAdapter(mAdapter);
 
@@ -141,9 +196,8 @@ public class ContactDemo extends AppCompatActivity
 
         if (id == R.id.contact_demo_in_memory) {
             showContactSyncDemoWithoutPersistentDatabase();
-//        } else if (id == R.id.nav_gallery) {
-//            showContactSyncDemoWithPersistentDatabase();
-//        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.city_selection_demo) {
+            showCitySelectionDemo();
         } else {
             showCountrySelectionDemo();
         }
@@ -153,17 +207,23 @@ public class ContactDemo extends AppCompatActivity
         return true;
     }
 
+    private void showCitySelectionDemo() {
+        countryselectiondemo.setVisibility(View.GONE);
+        demo1ParentContainer.setVisibility(View.GONE);
+        cityselectiondemo.setVisibility(View.VISIBLE);
+    }
+
 
     private void showContactSyncDemoWithoutPersistentDatabase() {
         countryselectiondemo.setVisibility(View.GONE);
+        cityselectiondemo.setVisibility(View.GONE);
         demo1ParentContainer.setVisibility(View.VISIBLE);
     }
-    private void showContactSyncDemoWithPersistentDatabase() {
-        countryselectiondemo.setVisibility(View.GONE);
-    }
+
     private void showCountrySelectionDemo() {
         countryselectiondemo.setVisibility(View.VISIBLE);
         demo1ParentContainer.setVisibility(View.GONE);
+        cityselectiondemo.setVisibility(View.GONE);
         CountryLoader cnLoader = new CountryLoader(this);
         cnLoader.execute((Void)null);
     }
@@ -239,6 +299,13 @@ public class ContactDemo extends AppCompatActivity
         eventDetailIntent.putExtra("cnObj", cnObj);
         startActivity(eventDetailIntent);
 
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        City selectedCity = citySelectionadapter.getItem(position);
+        citySelectionAutoComTextView.setText("");
+        Toast.makeText(this,"You selected city: " + selectedCity.getCityName() + ", " + selectedCity.getCityCountry(),Toast.LENGTH_LONG).show();
     }
 
     /*
@@ -446,5 +513,41 @@ public class ContactDemo extends AppCompatActivity
         catch (Exception e) {
             return null;
         }
+    }
+
+    //For more information about api please visit: https://developers.teleport.org/api/
+    private void loadSuggestions(String searchterm) {
+        RequestQueue queue = Volley.newRequestQueue(this);
+        String url = "https://api.teleport.org/api/cities/?search="+searchterm;
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        List<City> resultList = new ArrayList<City>();
+                        try {
+
+                            JSONObject obj = new JSONObject(response);
+                            JSONArray arralist = (JSONArray) ((JSONObject)obj.get("_embedded")).get("city:search-results");
+                            for (int i = 0 ; i < arralist.length(); i++) {
+                                JSONObject cityObj = arralist.getJSONObject(i);
+                                String fullCityName = (String) cityObj.get("matching_full_name");
+                                String cityName = fullCityName.substring(0,fullCityName.indexOf(","));
+                                String countryName = fullCityName.substring(fullCityName.indexOf(",")+2,fullCityName.length());
+                                resultList.add(new City(cityName, countryName));
+                            }
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                            Log.e("CitySelection","Error occurred");
+                            return;
+                        }
+                        citySelectionadapter.setCityData(resultList);
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Log.e("CitySelection","Error occurred");
+            }
+        });
+        queue.add(stringRequest);
     }
 }

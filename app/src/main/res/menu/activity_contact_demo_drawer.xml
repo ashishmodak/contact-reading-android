@@ -15,6 +15,11 @@
             android:id="@+id/country_selection_demo"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="Country selection demo" />
+
+        <item
+            android:id="@+id/city_selection_demo"
+            android:icon="@drawable/ic_menu_send"
+            android:title="City selection demo" />
     </group>
 
 </menu>
