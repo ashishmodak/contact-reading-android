@@ -6,7 +6,7 @@ This project demonstrates the contact book reading on Android Phone. Also it hel
 ## Selecting country code on Android phone
 Keeping track of all the countries and their codes is bit tedious task but it can easily achievable using libphonenumber. In this demo, the spinner will auto select the country according to sim card present in the device. If in the case of no sim card or lack of permission it will select the first country from the list of countries. 
 
-## Selecting country code on Android phone
+## City selection demo for Android
 This demo lets you pick your current city using your GPS co-ordinate. As well as it provides an auto complete text box where you can type your search term and it will show all the cities in the world matching that term.
 
 ## Scan following QR code for demo app
